@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block title %}
+    Words for the day | Shut down
+{% endblock %}
+{% block heading %}
+    Words for the day | Shut down
+{% endblock %}
+{% block content %}
+    <div class="modal">
+        <div class="modal_content">
+            <div class="modal_title">
+                <img src="{{ url_for('static', filename = 'assets/information.png') }}">
+                <h2>Device shutting down</h2>
+            </div>
+            <p>The system will now shut down. Please wait 30 seconds before unplugging the device.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        shutdown();
+        function shutdown() {
+            const interval = setTimeout(function() {
+                console.log('shutting down');
+                window.location.href = "/confirm_shut_down";
+            }, 5000); // 1000 = 1 second
+        }
+    </script>
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block title %}
+    Words for the day | {{ message_type }}
+{% endblock %}
+{% block heading %}
+    Words for the day | {{ message_type }}
+{% endblock %}
+{% block content %}
+    <div class="modal">
+        <div class="modal_content">
+            <div class="modal_title">
+                <img src="{{ url_for('static', filename = 'assets/'+message_type.lower()) }}.png">
+                <h2>{{ message_type }}</h2>
+            </div>
+            <p>{{ message }}</p>
+            <div class="dismiss">
+                <a class="false_button" href="{{ destination }}">OK</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

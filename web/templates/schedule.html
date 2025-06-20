@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block title %}
+    Words for the day | Schedule
+{% endblock %}
+{% block heading %}
+    Words for the day | Schedule
+{% endblock %}
+{% block content %}
+    <div class="modal">
+        <div class="modal_content">
+            <div class="modal_title">
+                <img src="{{ url_for('static', filename = 'assets/information.png') }}">
+                <h2>Change refresh rate</h2>
+            </div>
+            <form method="post">
+                <p>Display a new word every:</p>
+                <p><input type="number" name="new_refresh_rate" min="2" max="1440" value="{{ refresh_rate }}"> minutes.</p>
+                <div class="cancel_ok">
+                    <a href="/">Close</a>
+                    <button>
+                        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" aria-labelledby="circleOkIconTitle" stroke="#2329D6" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#2329D6"> <title id="circleOkIconTitle">OK</title> <polyline points="7 13 10 16 17 9"/> <circle cx="12" cy="12" r="10"/> </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
