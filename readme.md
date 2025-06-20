@@ -65,7 +65,7 @@ Press `CTRL`+`x`, then `y` to save and exit
 
 ### Web interface
 
-![](https://bitbucket.org/pangolinpaw/word-of-the-day/raw/fa06cc0699bc685bb512fbec2ab54aa728b0b049/screenshots/web_homepage.png)
+![](https://github.com/GarethMurden/word_of_the_day/blob/master/screenshots/web_homepage.png?raw=true)
 
 Words are saved to the device via a web interface accessible within the local network.
 
@@ -73,6 +73,6 @@ Each boot and if there are no words set to display, a welcome screen will be dis
 
 ### eInk display
 
-![](https://bitbucket.org/pangolinpaw/word-of-the-day/raw/3153e4d7c3faa783e2a4aef56f5cfbf08db533ba/screenshots/screen.png)
+![](https://github.com/GarethMurden/word_of_the_day/blob/master/screenshots/screen.png?raw=true)
 
 At set intervals, a random word from those set via the web is retrieved and shown on the epaper display.
